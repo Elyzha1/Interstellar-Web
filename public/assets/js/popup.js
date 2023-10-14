@@ -8,14 +8,14 @@ try {
 if (!inFrame && !navigator.userAgent.includes("Firefox")) {
     const popup = window.open("", "", "width=1000,height=600");
     if (!popup || popup.closed) {
-        alert("Allow popups and redirects to hide this from showing up in your history.");
+        alert("Thank you for using Interstellar | by Elyzha");
     } else {
         const doc = popup.document;
         const iframe = doc.createElement("iframe");
         const style = iframe.style;
         const link = doc.createElement("link");
 
-        doc.title = "Google Drive";
+        doc.title = "Interstellar";
         link.rel = "icon";
         link.href = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
         iframe.src = location.href;
